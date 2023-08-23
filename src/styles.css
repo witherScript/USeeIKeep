@@ -34,6 +34,12 @@ body button{
   transition: background-color 0.3s;
 }
 
+body #back-btn{
+  background-image: url('../assets/back-icon-md.png');
+  height: 50px;
+  width: 50px;
+}
+
 body button:hover {
   background-color: #e0e0e0; /* Background color on hover */
 }
@@ -125,10 +131,10 @@ body{
 
 #bed_trash {
   position: absolute;
-  top: 41.12%;
-  left: 47.46%;
-  width: 19.36%; /* 281 / 1452 ≈ 19.36% */
-  height: 44.36%; /* 362 / 816 ≈ 44.36% */
+  top: 69.12%;
+  left: 57.46%;
+  width: 5.36%; /* 281 / 1452 ≈ 19.36% */
+  height: 5.36%; /* 362 / 816 ≈ 44.36% */
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../assets/bed_assets/bed_trash.png');
@@ -137,10 +143,10 @@ body{
  #bed_put {
   position: absolute;
   background-size: contain;
-  top: 48.5%;
-  left: 31.01%;
-  width: 21.08%; /* 307 / 1452 ≈ 21.08% */
-  height: 23.28%; 
+  top: 50.5%;
+  left: 37.01%;
+  width: 10.08%; /* 307 / 1452 ≈ 21.08% */
+  height: 9.28%; 
   z-index: 1;
   background-image: url('../assets/bed_assets/bed_put.png');
   background-repeat: no-repeat;
@@ -149,10 +155,10 @@ body{
  #bed_store {
   position: absolute;
   background-size: contain;
-  top: 43.67%;
-  left: 37.4%;
-  width: 44%;
-  height: 39%;
+  top: 56.67%;
+  left: 47.4%;
+  width: 10%;
+  height: 10%;
   background-image: url('../assets/bed_assets/bed_store.png');
   background-repeat: no-repeat;
   
@@ -161,10 +167,10 @@ body{
  #bed_donate {
   position: absolute;
   background-size: contain;
-  top: 39.67%;
-  left: 34.30%;
-  width: 42.58%;
-  height: 37.38%;
+  top: 41.67%;
+  left: 70.30%;
+  width: 17.58%;
+  height: 15.38%;
   background-image: url('../assets/bed_assets/bed_donate.png');
   background-repeat: no-repeat;
 }
@@ -209,6 +215,12 @@ body #kitchen{
   width: 121px;
   height: 91px;
   background-image: url('../assets/kitchen-assets/clothes.png');
+
+}
+
+body .clean{
+
+  font-family: 'Press Start 2P', cursive;
 
 }
 

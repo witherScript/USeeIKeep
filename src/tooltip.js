@@ -20,15 +20,13 @@ export default class Tooltip extends EventEmitter{
   }
 
   add() { 
-    console.log(this);
-    if(this.hasTooltip) return;
+    if(this.element.hasChildNodes()) return;
     const tooltip = document.createElement("div");
     tooltip.textContent = "Click me!";
     tooltip.classList.add("tooltip"); 
     Object.assign(tooltip.style, this.config);
     this.element.appendChild(tooltip);
     this.hasTooltip = true;
-    this.emit('tooltip:added', {target:this});
   }
 
   windowPreview(roomId){
