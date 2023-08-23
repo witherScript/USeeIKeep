@@ -51,7 +51,9 @@ $ npm run start
 5. Open your browser and navigate to http://localhost:8080 to access the application.
 
 ## Known Bugs
-You may want to manually list any known bugs or issues in this section.
+
+- The game state depends on user first clicking the kitchen window - the project is choreographed to work kitchen -> bedroom -> empty
+- Inside the empty room, users are prompted to input a picture, the text font is lost and the code does not currently support the photo.
 
 License Information
 The project is licensed under the ISC license. You may include the full license text or a link to the license.
