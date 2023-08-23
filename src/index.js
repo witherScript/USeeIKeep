@@ -1,6 +1,8 @@
 import "./styles.css";
 import BoxMethod from "./four-box.js";
 import Menu from "./menu-config.js";
+import DoClassify from "./empty-logic";
+import { showElem } from "./util";
 window.addEventListener("load", function () {
   //when the page first loads the menu should be the first thing to display
 
@@ -21,16 +23,26 @@ window.addEventListener("load", function () {
 });
 
 async function startCleaningRoom(roomName) {
-  const box = new BoxMethod(`${roomName}-box`);
-  box.populateItem(roomName);
+  
+  if(roomName==='empty'){
+    showElem('empty'); // Make the "empty" div visible
+    let emptyLogicStart = new DoClassify();
+    emptyLogicStart.doMessage();
 
-  // If you want to handle sequential cleaning, you can return the promise
-  await box.finishRoom();
+  } else {
+    const box = new BoxMethod(`${roomName}-box`);
+    box.populateItem(roomName);
+    // If you want to handle sequential cleaning, you can return the promise
+    await box.finishRoom();
+  }
 }
 
 async function startCleaningProcess() {
   await startCleaningRoom("kitchen");
   await startCleaningRoom("bedroom");
+  await startCleaningRoom('empty'); // Use await here
+  
+  
   // You can add more rooms here if needed
   console.log("All rooms are clean!");
 }

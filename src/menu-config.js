@@ -29,13 +29,23 @@ export default class Menu {
     this.animateWindows();
 
     this.toListen.forEach(function (element) {
-      console.log(element.id);
       let room = element.id.split("-")[1];
-      element.addEventListener("click", function () {
-        hideElem("menu");
-        showElem(`${room}`);
-        showElem(`${room}-box`);
-      });
+      if(room!=='empty'){
+
+        element.addEventListener("click", function () {
+          hideElem("menu");
+          showElem(`${room}`);
+          showElem(`${room}-box`);
+        });
+
+      } else{
+        element.addEventListener("click", function () {
+          hideElem("menu");
+          showElem('empty');
+        });
+        
+      }
+      
     });
   }
 

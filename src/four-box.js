@@ -201,7 +201,7 @@ export default class BoxMethod extends EventEmitter {
       this.reset();
       showElem("menu");
       this.finishRoom();
-    })
+    });
   }
 
   finishRoom() {

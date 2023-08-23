@@ -79,6 +79,15 @@ body #menu{
 
 }
 
+body #empty{
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/empty/empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 body #bedroom{
   width: 100%;
   height: 100%;
@@ -224,6 +233,15 @@ body .clean{
 
 }
 
+body #empty-prompt{
+  background-color: "white";
+  border-radius: "25px";
+  border: "1px solid #ccc";
+  padding: "5px";
+  font-size: "20px";
+  font-family: "press start 2p, cursive";
+}
+
 #pot{
   position: absolute;
   top: 550px;
@@ -232,8 +250,6 @@ body .clean{
   height: 145px;
   background-image: url('../assets/kitchen-assets/pot.png');
 }
-
-
 
 
 #forks{
