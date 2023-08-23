@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="to-bedroom"></div>
+      <div id="to-empty"></div>
+      <div id="to-kitchen"></div>
+      <div id="helper">
+        <p id="to-show-0">
+        Hello! Welcome to USeeIKeep, a tidying app to teach you how to clean your home! <button id="next1">Next</button></p>
+        <p id="to-show-1" class="hidden">We are going to learn about the Four Box method, then we will walk you through cleaning a room of your own!
+          <button id="show-next">Next</button>
+        </p>
+        <p id="to-show-2" class="hidden">Click one of the windows to get started: <button id="play-window">Next</button></p>
+      </div>
+    </div>
+
+    <div id="kitchen" class="hidden">
+      <div id="cans" class='trash-kitchen' data-toggle="tooltip" data-placement="top"></div>
+      <div id="pot" class='donate-kitchen' data-toggle="tooltip" data-placement="top"></div>
+      <div id="forks" class='put-away-kitchen' data-toggle="tooltip" data-placement="top"></div>
+      <div id="winter" class='store-kitchen' data-toggle="tooltip" data-placement="top"></div>
+    </div>
+
+    <div id="bedroom" class="hidden">
+    <svg id="bed_trash" xmlns="../Users/genesis/Downloads/image2vector.svg" viewBox="0 0 281 362" class="trash-bedroom">
+    </svg>    
+    <div id="bed_put" class='put-away-bedroom' data-toggle="tooltip" data-placement="top"></div>
+    <div id="bed_store" class='store-bedroom' data-toggle="tooltip" data-placement="top"></div>
+    <div id="bed_donate" class='donate-bedroom' data-toggle="tooltip" data-placement="top"></div>
+    </div>
+
+    <div id="box" class="hidden"></div>
+    
+  </body>
+</html>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0; 
+  background: #6696B2;
+}
+
+.hidden {
+  display: none;
+}
+
+body #to-bedroom{
+  position: fixed;
+  width: 75px;
+  height: 52px;
+  background-image: url('../assets/top-middle.png');
+  top: 44.6%;
+  left: 42.3%;
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-size: cover;
+}
+
+body button{
+  background: white;
+  font-family: "press start 2p", cursive;
+  margin-left: 10px; /* Space to the left of the button */
+  margin-top: 5px;   /* Space above the button */
+  padding: 5px 10px; /* Inner padding for the button */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  background-color: #f0f0f0; /* Background color */
+  transition: background-color 0.3s;
+}
+
+body button:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+}
+
+body #to-kitchen{
+  position: absolute;
+  width: 134px;
+  height: 57px;
+  background-image: url('../assets/bottom-left.jpg');
+  top: 65.6%;
+  left: 29.9%;
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-size: cover;
+}
+
+body #to-empty{
+  position: absolute;
+  width: 132px;
+  height: 65px;
+  background-image: url('../assets/bottom-middle.png');
+  top: 64.6%;
+  left: 47.9%;
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-size: cover;
+
+}
+
+
+body #menu{
+  background: #6696B2;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/house.png');
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-position: center; /* This will center the background image */
+  background-attachment: fixed; /* This makes the background fixed with regard to the viewport */
+
+}
+
+body #bedroom{
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bed_assets/room_empty.png');
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-position: center; /* This will center the background image */
+  background-attachment: fixed; /* This makes the background fixed with regard to the viewport */
+}
+
+div > div .tooltip {
+  position: "absolute";
+  background: "white";
+  border: "1px solid #ccc";
+  padding: "5px";
+  font-size: '8px';
+  font-family: "press start 2p", cursive;
+}
+
+body #helper {
+  margin-top: 50px; /* Space from the top */
+  margin-left: 12px; /* Offset from the left margin */
+  height: 100px;
+  width: 30%;
+  left: 37%;
+  color: rgba(152, 22, 22, 0.693);
+  text-align: center;
+  font-family: "press start 2p", cursive;
+  background: white;
+  border: 1px solid #ccc; /* Border styling */
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 15px; /* Rounded corners */
+  position: relative; /* Required for 'left' property to work */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+body .box-text {
+  position: "absolute";
+  border: "1px solid #ccc";
+  padding: "5px";
+  font-size: '8px';
+  font-family: "press start 2p", cursive;
+}
+
+body{
+  background: rgb(110,132,145);
+}
+
+#bed_trash {
+  position: absolute;
+  top: 41.12%;
+  left: 47.46%;
+  width: 19.36%; /* 281 / 1452 ≈ 19.36% */
+  height: 44.36%; /* 362 / 816 ≈ 44.36% */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../assets/bed_assets/bed_trash.png');
+}
+
+ #bed_put {
+  position: absolute;
+  background-size: contain;
+  top: 48.5%;
+  left: 31.01%;
+  width: 21.08%; /* 307 / 1452 ≈ 21.08% */
+  height: 23.28%; 
+  z-index: 1;
+  background-image: url('../assets/bed_assets/bed_put.png');
+  background-repeat: no-repeat;
+} 
+
+ #bed_store {
+  position: absolute;
+  background-size: contain;
+  top: 43.67%;
+  left: 37.4%;
+  width: 44%;
+  height: 39%;
+  background-image: url('../assets/bed_assets/bed_store.png');
+  background-repeat: no-repeat;
+  
+} 
+
+ #bed_donate {
+  position: absolute;
+  background-size: contain;
+  top: 39.67%;
+  left: 34.30%;
+  width: 42.58%;
+  height: 37.38%;
+  background-image: url('../assets/bed_assets/bed_donate.png');
+  background-repeat: no-repeat;
+}
+
+#box{
+  position: absolute;
+  background-size: contain;
+  top: 63%;
+  left: 6.5%;
+  width: 15%;
+  height: 25%;
+  background-image: url('../assets/kitchen-assets/box.png');
+  background-repeat: no-repeat;
+}
+
+body #kitchen{
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/kitchen-assets/kitchen.png');
+  background-repeat: no-repeat; /* This will prevent the background image from repeating */
+  background-position: center; /* This will center the background image */
+  background-attachment: fixed; /* This makes the background fixed with regard to the viewport */
+
+}
+
+#cans {
+  position: absolute;
+  background-size: contain;
+  top: 360px;
+  left: 480px;
+  width: 158px;
+  height: 128px;
+  background-image: url('../assets/kitchen-assets/cans.png');
+  
+}
+
+#winter {
+  position: absolute;
+  background-size: contain;
+  top: 700px;
+  left: 620px;
+  width: 121px;
+  height: 91px;
+  background-image: url('../assets/kitchen-assets/clothes.png');
+
+}
+
+#pot{
+  position: absolute;
+  top: 550px;
+  left: 450px;
+  width: 135px;
+  height: 145px;
+  background-image: url('../assets/kitchen-assets/pot.png');
+}
+
+
+
+
+#forks{
+  position: absolute;
+  background-size: contain;
+  top: 570px;
+  left: 880px;
+  width: 115px;
+  height: 128px;
+  background-image: url('../assets/kitchen-assets/forks.png');
+  
+}
+
+
