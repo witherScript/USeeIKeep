@@ -56,5 +56,5 @@ $ npm run start
 - Inside the empty room, users are prompted to input a picture, the text font is lost and the code does not currently support the photo.
 
 License Information
-The project is licensed under the ISC license. You may include the full license text or a link to the license.
+The project is licensed under the ISC license.
 
